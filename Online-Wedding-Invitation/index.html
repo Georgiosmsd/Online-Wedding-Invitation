@@ -49,12 +49,10 @@
             case "reserve":
               return <Reserve t={t} onBackClick={() => setActiveTab("main")} />;
             case "main":
+            default:
               return (
                 <Main t={t} onReserveClick={() => setActiveTab("reserve")} />
               );
-            case "login":
-            default:
-              return <Login t={t} onLoginClick={() => setActiveTab("main")} />;
           }
         };
 
@@ -108,50 +106,6 @@
 
           return () => observer.disconnect();
         }, [resetKey]);
-      }
-
-      function Login({ onLoginClick, t }) {
-        React.useEffect(() => {
-          window.scrollTo(0, 0);
-        }, []);
-
-        const correctPassword = "06062026";
-
-        const handleSubmit = (event) => {
-          event.preventDefault();
-          const userPassword = event.target.password.value;
-
-          if (userPassword === correctPassword) {
-            onLoginClick();
-          } else {
-            alert(t("access_denied"));
-            event.target.password.value = "";
-          }
-        };
-
-        return (
-          <section id="login" className="login-page">
-            <link rel="stylesheet" href="login.css?v=2" />
-            <div className="form-container">
-              <form id="passwordForm" onSubmit={handleSubmit}>
-                <h3>{t("entry_code")}</h3>
-                <h3>{t("what_date")}</h3>
-                <input
-                  type="password"
-                  id="passwordInput"
-                  name="password"
-                  required
-                  placeholder={t("answer")}
-                />
-                <input
-                  type="submit"
-                  value={t("continue")}
-                  className="form-btn"
-                />
-              </form>
-            </div>
-          </section>
-        );
       }
 
       function Main({ onReserveClick, t }) {
