@@ -20,8 +20,8 @@
     "en": "Continue"
   },
   "title_names": {
-    "el": "ΜΑΞΙΜΟΣ & ΝΙΝΑ",
-    "en": "MAXIMOS & NINA"
+    "el": "ΜΑΡΚΟ & ΜΑΡΙΑ",
+    "en": "MARKO & MARIA"
   },
   "congratulations": {
     "el": "Συγχαρητήρια!",
@@ -40,8 +40,8 @@
     "en": "Wedding Date"
   },
   "wedding_date": {
-    "el": "06 Ιουνίου 2026",
-    "en": "06 June 2026"
+    "el": "08 Ιούλιο 2028",
+    "en": "08 July 2028"
   },
   "date1": {
     "el": "Δ",
@@ -127,13 +127,13 @@
     "el": "Επικοινωνία",
     "en": "Contact"
   },
-  "maximos": {
-    "el": "Μάξιμος",
-    "en": "Maximos"
+  "marko": {
+    "el": "Μάρκος",
+    "en": "Marko"
   },
-  "nina": {
-    "el": "Νίνα",
-    "en": "Nina"
+  "maria": {
+    "el": "Μαρία",
+    "en": "Maria"
   },
   "fill_form": {
     "el": "Παρακαλούμε συμπληρώστε την παρακάτω φόρμα κράτησης.",
@@ -220,3 +220,4 @@
     "en": "choice"
   }
 }
+
