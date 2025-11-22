@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(images_fonts/miamanueva.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  padding-bottom: 60px;
+}
+
+.container .content {
+  text-align: center;
+}
+
+.container .content h3 {
+  font-size: 30px;
+  color: #333;
+}
+
+.container .content h3 span {
+  background: crimson;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0 15px;
+}
+
+.container .content h1 {
+  font-size: 50px;
+  color: #333;
+}
+
+.container .content h1 span {
+  color: crimson;
+}
+
+.container .content p {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.container .content .btn {
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 20px;
+  background: #333;
+  color: #fff;
+  margin: 0 5px;
+  text-transform: capitalize;
+}
+
+.container .content .btn:hover {
+  background: crimson;
+}
+
+.form-container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  padding-bottom: 60px;
+  overflow: hidden;
+}
+
+.form-container::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("images_fonts/main_LE_upscale_balanced_x4.jpg") no-repeat center 40%;
+  background-size: cover;
+  filter: blur(10px);
+  z-index: 0;
+  transform: scale(1.05);
+}
+
+.form-container form {
+  padding: 20px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0);
+  text-align: center;
+  width: 500px;
+  z-index: 1;
+}
+
+.form-container form h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #ece7f3;
+  font-family: myFirstFont, serif;
+}
+
+.form-container form input,
+.form-container form select {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 17px;
+  margin: 8px 0;
+  background: #eee;
+  border-radius: 5px;
+}
+
+.form-container form select option {
+  background: #fff;
+}
+
+.form-container form .form-btn {
+  background: #c9b274;
+  color: #3a5a6a;
+  text-transform: capitalize;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.form-container form .form-btn:hover {
+  background-color: #a0647c;
+  box-shadow: 0 0 12px #78395560;
+  transform: scale(1.05);
+}
+
+.form-container form p {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.form-container form p a {
+  color: crimson;
+}
+
+.form-container form .error-msg {
+  margin: 10px 0;
+  display: block;
+  background: crimson;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+@media (min-width: 350px) and (max-width: 399px) {
+  .form-container form {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .form-container form h3 {
+    font-size: 22px;
+  }
+
+  .form-container form input,
+  .form-container form select {
+    font-size: 15px;
+    padding: 8px 12px;
+  }
+
+  .form-container form .form-btn {
+    font-size: 20px;
+    padding: 8px 20px;
+  }
+
+  .form-container form p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 650px) {
+  .form-container form {
+    width: 85%;
+    padding: 18px;
+  }
+
+  .form-container form h3 {
+    font-size: 25px;
+  }
+
+  .form-container form input,
+  .form-container form select {
+    font-size: 16px;
+    padding: 9px 13px;
+  }
+
+  .form-container form .form-btn {
+    font-size: 22px;
+  }
+
+  .form-container form p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 651px) and (max-width: 900px) {
+  .form-container form {
+    width: 70%;
+    padding: 20px;
+  }
+
+  .form-container form h3 {
+    font-size: 28px;
+  }
+
+  .form-container form input,
+  .form-container form select {
+    font-size: 17px;
+  }
+
+  .form-container form .form-btn {
+    font-size: 24px;
+  }
+
+  .form-container form p {
+    font-size: 19px;
+  }
+}
